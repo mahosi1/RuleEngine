@@ -37,9 +37,6 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -67,16 +64,6 @@
     <Compile Include="StringOperand.cs" />
     <Compile Include="TestObject.cs" />
     <Compile Include="Utility.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MortgageReturns.Entities\MortgageReturns.Entities.csproj">
-      <Project>{69f520e9-29ab-44d5-b74b-411dc7134103}</Project>
-      <Name>MortgageReturns.Entities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MortgageReturns.Repository\MortgageReturns.Repository.csproj">
-      <Project>{b57762f3-e45a-4025-b5ef-652e0dcd365d}</Project>
-      <Name>MortgageReturns.Repository</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
