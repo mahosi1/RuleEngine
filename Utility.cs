@@ -2,7 +2,7 @@
 
 namespace RuleEngine
 {
-    static class Utility
+    public static class Utility
     {
         public static void Apply(this IRuleProcess target, IBuildRuleSet ruleSetBuilder)
         {
