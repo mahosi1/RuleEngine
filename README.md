@@ -32,7 +32,7 @@
     helper.Else("else case");
 ```
 4. Dispatch Rule Engine (extension method on IRuleProcess)
-5. ```
+```
         obj.Apply(helper);
         Console.Out.WriteLine(obj.Result); // == "then case"
 ```
