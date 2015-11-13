@@ -14,11 +14,13 @@
     }
     ...  
     var obj = new TestObject { AccountId = 10, StringField = "some string" };
-    ```
+```
+
 2. Build a strongly-typed RuleHelper of your target type
 ```
     var helper = new RuleHelper<TestObject>();
 ```  
+
 3. Apply conditions and rules
 ```
     helper.AddCondition(x => x.StringField, StringOperand.DoesNotEqual, null, Conditional.And);
@@ -26,6 +28,7 @@
     helper.Then("then case");
     helper.Else("else case");
 ```
+
 4. Dispatch Rule Engine (extension method on IRuleProcess)
 ```
     obj.Apply(helper);
