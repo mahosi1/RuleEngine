@@ -45,18 +45,6 @@ namespace RuleEngine
 
         public string RuleName { get; set; }
 
-        public BindingRule GenerateBindingRule()
-        {
-            BindingRule.BindingCondition[] items = this._expressions.Select(
-                x => new BindingRule.BindingCondition(
-                         x.Guid,
-                         x.PropertyName,
-                         x.Operand,
-                         x.Value,
-                         x.Conditional)).ToArray();
-            return new BindingRule(items, this._thenValue, this._elseValue);
-        }
-
         public int RemoveCondition(Guid conditionId)
         {
             BaseExpression item = this._expressions.Single(x => x.Guid == conditionId);
