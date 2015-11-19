@@ -9,16 +9,12 @@ using System.Workflow.Activities.Rules;
 
 namespace RuleEngine
 {
-    partial class RuleHelper<T> : IBuildRuleSet
-    {
-        
-    }
     /// <summary>
     /// strongly typed RuleSet wrapper for numeric and string expressions
     /// </summary>
     /// <typeparam name="T"></typeparam>
     [Serializable]
-    public partial class RuleHelper<T> where T : IRuleProcess 
+    public class RuleHelper<T> : IBuildRuleSet where T : IRuleProcess 
     {
         const string ResultProperty = "Result";
         const string Halt = "Halt";
