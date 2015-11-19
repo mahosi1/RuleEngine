@@ -50,7 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseExpression.cs" />
-    <Compile Include="BindingRule.cs" />
     <Compile Include="Conditional.cs" />
     <Compile Include="IBuildRuleSet.cs" />
     <Compile Include="IRuleProcess.cs" />
